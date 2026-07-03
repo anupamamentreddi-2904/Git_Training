@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0.1",
+  "author": {
+    "name": "Dunboxed",
+    "email": "contact@dunboxed.com "
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/weeklycomboviz_9A1F74BE2C2B467CBB2CF62E7B3D99F7.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "weeklycomboviz_9A1F74BE2C2B467CBB2CF62E7B3D99F7",
+    "name": "ComboChart-Weekly-Base-Axis",
+    "displayName": "ComboChart-Weekly-Base-Axis_SCL",
+    "version": "1.0.0.1",
+    "description": "SCL Weekly Combo Chart",
+    "supportUrl": "contact@dunboxed.com ",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

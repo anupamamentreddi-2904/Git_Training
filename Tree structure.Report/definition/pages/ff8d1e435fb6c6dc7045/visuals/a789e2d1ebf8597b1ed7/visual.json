@@ -1,0 +1,106 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a789e2d1ebf8597b1ed7",
+  "position": {
+    "x": 9.72644376899696,
+    "y": 0,
+    "z": 0,
+    "height": 632.21884498480244,
+    "width": 1204.1337386018238,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "weeklycomboviz_9A1F74BE2C2B467CBB2CF62E7B3D99F7",
+    "query": {
+      "queryState": {
+        "axis": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactStandardData"
+                    }
+                  },
+                  "Property": "Month"
+                }
+              },
+              "queryRef": "FactStandardData.Month",
+              "nativeQueryRef": "Month"
+            }
+          ]
+        },
+        "plan": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactStandardData"
+                        }
+                      },
+                      "Property": "Plan"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(FactStandardData.Plan)",
+              "nativeQueryRef": "Sum of Plan"
+            }
+          ]
+        },
+        "actual": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "FactStandardData"
+                        }
+                      },
+                      "Property": "Actual"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(FactStandardData.Actual)",
+              "nativeQueryRef": "Sum of Actual"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FactStandardData"
+                  }
+                },
+                "Property": "Month"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "xaxis": [],
+      "general": []
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

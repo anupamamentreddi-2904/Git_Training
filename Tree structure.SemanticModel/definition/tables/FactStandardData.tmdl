@@ -1,0 +1,268 @@
+table FactStandardData
+	lineageTag: 385f3720-a16f-4174-8ce3-3c5ac701eb31
+
+	column DimKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 9eaca0dc-632b-4596-8def-cde53e3c922c
+		summarizeBy: none
+		sourceColumn: DimKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2745bebc-dab0-4fa5-a318-7a1aab8d94bd
+		summarizeBy: none
+		sourceColumn: Month
+
+		variation Variation
+			isDefault
+			relationship: 32507c32-9de6-46be-932e-d2946d92de69
+			defaultHierarchy: LocalDateTable_dfa26380-c6c5-4b3b-ad1d-76553367d44f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Actual
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d200cba-dabd-4306-8db1-930ae6f063d5
+		summarizeBy: sum
+		sourceColumn: Actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column Plan
+		dataType: double
+		lineageTag: 445a9d06-3344-4efb-b293-f380de1c25c3
+		summarizeBy: sum
+		sourceColumn: Plan
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Last Year'
+		dataType: double
+		lineageTag: ddae0736-1aa8-460b-9761-8f45a401d204
+		summarizeBy: sum
+		sourceColumn: Last Year
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Bars
+		dataType: int64
+		formatString: 0
+		lineageTag: a2093cb6-1acb-4b23-bf43-af779e8c5595
+		summarizeBy: sum
+		sourceColumn: Bars
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis Plan'
+		dataType: string
+		lineageTag: ac36b26d-1969-45d3-81e1-62504a17ca6e
+		summarizeBy: none
+		sourceColumn: Secondary axis Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis Actual'
+		dataType: string
+		lineageTag: c44b87f3-8003-4063-8cb6-f4d82619647d
+		summarizeBy: none
+		sourceColumn: Secondary axis Actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Revised Plan'
+		dataType: string
+		lineageTag: 0f9bb78b-190c-4152-8a0e-600a1125768b
+		summarizeBy: none
+		sourceColumn: Revised Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis Revised Plan'
+		dataType: string
+		lineageTag: 04e83db2-7e8d-4012-a5e1-2668d3396143
+		summarizeBy: none
+		sourceColumn: Secondary axis Revised Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'YTD Plan'
+		dataType: string
+		lineageTag: c2942851-0f62-4749-b1d4-846f387518a2
+		summarizeBy: none
+		sourceColumn: YTD Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'YTD Actual'
+		dataType: string
+		lineageTag: a41b06c3-4e81-49b3-a331-5370b351f7f7
+		summarizeBy: none
+		sourceColumn: YTD Actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'YTD Last Year'
+		dataType: string
+		lineageTag: f2af69cf-196f-4b8b-8a3d-efde022ddf28
+		summarizeBy: none
+		sourceColumn: YTD Last Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column VarianceName1
+		dataType: string
+		lineageTag: 2a897b23-8fe5-4feb-b12f-468b493288d7
+		summarizeBy: none
+		sourceColumn: VarianceName1
+
+		annotation SummarizationSetBy = Automatic
+
+	column VarianceName2
+		dataType: string
+		lineageTag: 30fa75b8-4917-4ca8-9c48-6a3e48dba2f8
+		summarizeBy: none
+		sourceColumn: VarianceName2
+
+		annotation SummarizationSetBy = Automatic
+
+	column VarianceName3
+		dataType: string
+		lineageTag: 31683dce-53d4-49dc-8fa7-7742311becec
+		summarizeBy: none
+		sourceColumn: VarianceName3
+
+		annotation SummarizationSetBy = Automatic
+
+	column VarianceValue1
+		dataType: string
+		lineageTag: b06d8ac2-d6f6-40bd-868c-9acf5a298b41
+		summarizeBy: none
+		sourceColumn: VarianceValue1
+
+		annotation SummarizationSetBy = Automatic
+
+	column VarianceValue2
+		dataType: string
+		lineageTag: fbb30c3e-2634-447b-840f-af6d48723618
+		summarizeBy: none
+		sourceColumn: VarianceValue2
+
+		annotation SummarizationSetBy = Automatic
+
+	column VarianceValue3
+		dataType: string
+		lineageTag: 03556ef0-acc5-4ea1-b1e3-c9200613d8ff
+		summarizeBy: none
+		sourceColumn: VarianceValue3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variance UOM'
+		dataType: string
+		lineageTag: 65be1e97-052a-4565-9c9d-b5b2b43f385a
+		summarizeBy: none
+		sourceColumn: Variance UOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variance Better Direction'
+		dataType: string
+		lineageTag: ebb81bcb-149b-4d75-80ff-2553bd2bc94e
+		summarizeBy: none
+		sourceColumn: Variance Better Direction
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variance Better Text'
+		dataType: string
+		lineageTag: a3cce424-c7f2-40b3-99fd-8db94b2bf509
+		summarizeBy: none
+		sourceColumn: Variance Better Text
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variance Title'
+		dataType: string
+		lineageTag: 4fa10ecc-f9d5-4b4e-8251-37c5fffdf729
+		summarizeBy: none
+		sourceColumn: Variance Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Recovery Plan'
+		dataType: string
+		lineageTag: dc746175-d463-453e-9d83-76719a19830e
+		summarizeBy: none
+		sourceColumn: Recovery Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prrimary Recovery Axis'
+		dataType: string
+		lineageTag: d39da123-de50-4cfb-a09b-25e5a2ec92c2
+		summarizeBy: none
+		sourceColumn: Prrimary Recovery Axis
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis Recovery Plan'
+		dataType: string
+		lineageTag: d44cf34e-fdaa-4580-b59b-e0ccfdf2e193
+		summarizeBy: none
+		sourceColumn: Secondary axis Recovery Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Recovery Axis'
+		dataType: string
+		lineageTag: 8c74b2d3-d2e2-4802-a99b-df848d8e5f6b
+		summarizeBy: none
+		sourceColumn: Secondary Recovery Axis
+
+		annotation SummarizationSetBy = Automatic
+
+	column NonBlank
+		dataType: string
+		lineageTag: 1411fa45-e929-492e-b785-82b63025aaa7
+		summarizeBy: none
+		sourceColumn: NonBlank
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = ```
+			
+			YEAR (
+			    DATEVALUE ( 'FactStandardData'[Month] )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: dad15877-7b86-4812-a568-a8a6624da1df
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactStandardData = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\AnupamaM\OneDrive - Dunboxed\Desktop\New Requirement\Sample data- Tree diagram Dashboard v2.xlsx"), null, true),
+				    FactStandardData_Sheet = Source{[Item="FactStandardData",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(FactStandardData_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"DimKey", Int64.Type}, {"Month", type date}, {"Actual", Int64.Type}, {"Plan", type number}, {"Last Year", type number}, {"Bars", Int64.Type}, {"Secondary axis Plan", type any}, {"Secondary axis Actual", type any}, {"Revised Plan", type any}, {"Secondary axis Revised Plan", type any}, {"YTD Plan", type any}, {"YTD Actual", type any}, {"YTD Last Year", type any}, {"VarianceName1", type any}, {"VarianceName2", type any}, {"VarianceName3", type any}, {"VarianceValue1", type any}, {"VarianceValue2", type any}, {"VarianceValue3", type any}, {"Variance UOM", type any}, {"Variance Better Direction", type any}, {"Variance Better Text", type any}, {"Variance Title", type any}, {"Recovery Plan", type any}, {"Prrimary Recovery Axis", type any}, {"Secondary axis Recovery Plan", type any}, {"Secondary Recovery Axis", type any}, {"NonBlank", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

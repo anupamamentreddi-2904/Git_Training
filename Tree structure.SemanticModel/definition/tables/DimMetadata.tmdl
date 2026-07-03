@@ -1,0 +1,203 @@
+table DimMetadata
+	lineageTag: 5ba230c5-a0d4-44cb-a638-b64bcda39cb3
+
+	column DimKey
+		dataType: int64
+		formatString: 0
+		lineageTag: cd76b268-ea11-422d-826d-dd7ab9d7057b
+		summarizeBy: none
+		sourceColumn: DimKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Element Type'
+		dataType: string
+		lineageTag: 76c8da1a-c733-4d0b-907b-49442e90feff
+		summarizeBy: none
+		sourceColumn: Element Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Organization Objective'
+		dataType: string
+		lineageTag: 21e8c4ca-78f1-4478-9889-5e4f7e9447d7
+		summarizeBy: none
+		sourceColumn: Organization Objective
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Organization Guideline'
+		dataType: string
+		lineageTag: b9f212a2-157a-41cd-8bb8-e9473451edda
+		summarizeBy: none
+		sourceColumn: Organization Guideline
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Department Objective'
+		dataType: string
+		lineageTag: e89e12b6-62e7-4268-b3ff-51d6d8be9daa
+		summarizeBy: none
+		sourceColumn: Department Objective
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Department Action Plan'
+		dataType: string
+		lineageTag: 0c9fdb11-4235-4128-b26c-07c44dcf54be
+		summarizeBy: none
+		sourceColumn: Department Action Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column Department
+		dataType: string
+		lineageTag: 89393413-8085-4d05-ac97-e81aeb7ac972
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = Automatic
+
+	column UOM
+		dataType: string
+		lineageTag: 3972ddaf-6557-4fe9-9795-3df7b107f5b6
+		summarizeBy: none
+		sourceColumn: UOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resp
+		dataType: string
+		lineageTag: a6708ac0-441f-4a81-9394-b2c8ae4ebfae
+		summarizeBy: none
+		sourceColumn: Resp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Better
+		dataType: string
+		lineageTag: b25f4c7d-812b-4cf7-8309-c2af8d8696fa
+		summarizeBy: none
+		sourceColumn: Better
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last 3 Year Measure'
+		dataType: string
+		lineageTag: c8b9ef34-7a60-4f4b-a8d5-26a600954301
+		summarizeBy: none
+		sourceColumn: Last 3 Year Measure
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Policy Ref'
+		dataType: string
+		lineageTag: f2be6056-0568-4b39-86c0-8a0ecfb295c1
+		summarizeBy: none
+		sourceColumn: Policy Ref
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MP/CP Ref'
+		dataType: string
+		lineageTag: bf8f3f4d-e9fc-41dc-9c92-6eae3f28a73c
+		summarizeBy: none
+		sourceColumn: MP/CP Ref
+
+		annotation SummarizationSetBy = Automatic
+
+	column Policy
+		dataType: string
+		lineageTag: b413af52-ff67-4d46-8fa9-97d193511696
+		summarizeBy: none
+		sourceColumn: Policy
+
+		annotation SummarizationSetBy = Automatic
+
+	column Policy/Cluster
+		dataType: string
+		lineageTag: aead3506-0b1b-4e2f-ba57-61653000b73d
+		summarizeBy: none
+		sourceColumn: Policy/Cluster
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No. of Decimals'
+		dataType: int64
+		formatString: 0
+		lineageTag: 25c4a8ff-e549-47ed-80b0-9270b3a40efa
+		summarizeBy: none
+		sourceColumn: No. of Decimals
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis Unit'
+		dataType: string
+		lineageTag: d6e4ac87-04ac-4f68-81e4-7a8b2dee1acd
+		summarizeBy: none
+		sourceColumn: Secondary axis Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis - Better'
+		dataType: string
+		lineageTag: 2e8969fb-2e61-4b06-9aec-ae5ce4d8dfa5
+		summarizeBy: none
+		sourceColumn: Secondary axis - Better
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary axis - No of Decimals'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8453b41a-d3de-4872-8095-6996a2ebf0d7
+		summarizeBy: none
+		sourceColumn: Secondary axis - No of Decimals
+
+		annotation SummarizationSetBy = Automatic
+
+	column Formula
+		dataType: string
+		lineageTag: 223bb0e4-f83d-406d-9242-b7434d8e601f
+		summarizeBy: none
+		sourceColumn: Formula
+
+		annotation SummarizationSetBy = Automatic
+
+	column Source
+		dataType: string
+		lineageTag: 2f4a4b35-4387-4e35-a20d-eba95197b91f
+		summarizeBy: none
+		sourceColumn: Source
+
+		annotation SummarizationSetBy = Automatic
+
+	column ChartType
+		dataType: string
+		lineageTag: 19e1d319-273e-42b6-b33c-0cb36ad49881
+		summarizeBy: none
+		sourceColumn: ChartType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Axis Type'
+		dataType: string
+		lineageTag: 6ae07006-9ce6-40e6-9862-f04beffbaece
+		summarizeBy: none
+		sourceColumn: Axis Type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimMetadata = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\AnupamaM\OneDrive - Dunboxed\Desktop\New Requirement\Sample data- Tree diagram Dashboard v2.xlsx"), null, true),
+				    DimMetadata_Sheet = Source{[Item="DimMetadata",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(DimMetadata_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"DimKey", Int64.Type}, {"Element Type", type text}, {"Organization Objective", type text}, {"Organization Guideline", type text}, {"Department Objective", type text}, {"Department Action Plan", type text}, {"Department", type text}, {"UOM", type text}, {"Resp", type text}, {"Better", type text}, {"Last 3 Year Measure", type any}, {"Policy Ref", type any}, {"MP/CP Ref", type text}, {"Policy", type text}, {"Policy/Cluster", type text}, {"No. of Decimals", Int64.Type}, {"Secondary axis Unit", type text}, {"Secondary axis - Better", type text}, {"Secondary axis - No of Decimals", Int64.Type}, {"Formula", type text}, {"Source", type text}, {"ChartType", type text}, {"Axis Type", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

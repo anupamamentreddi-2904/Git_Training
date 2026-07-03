@@ -1,0 +1,9 @@
+relationship 32507c32-9de6-46be-932e-d2946d92de69
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactStandardData.Month
+	toColumn: LocalDateTable_dfa26380-c6c5-4b3b-ad1d-76553367d44f.Date
+
+relationship AutoDetected_c662f223-f6b4-44f7-b5e7-f3ce3ed4e24b
+	fromColumn: FactStandardData.DimKey
+	toColumn: DimMetadata.DimKey
+
